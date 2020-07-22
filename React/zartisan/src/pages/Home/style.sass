@@ -1,0 +1,48 @@
+@import src/styles/vars
+
+.home
+  height: $height-content
+  background-color: $background-color-content
+  &-content-button
+    height: 20%
+    padding-top: 1em
+  &-button-dropdown
+    height: 50%
+    width: 100%
+  &-button-region
+    width: 90%
+    margin-top: 1.5em
+    border-radius: 15px
+  &-cascader-jobs
+    width: 90%
+    margin: 1em
+    border-radius: 15px
+    border: none
+    &:focus
+      color: $button-color-primary
+
+.ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled), .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover
+  background-color: #CCB39C
+  overflow: scroll
+
+@media screen and (min-width: 960px)
+  .home
+    &-content-button
+      height: 20%
+      padding-top: 1em
+    &-button-dropdown
+      height: 50%
+      width: 100%
+    &-france
+      height: 65%
+    &-button-region
+      width: 50%
+      margin-top: 1.5em
+      border-radius: 15px
+    &-cascader-jobs
+      width: 50%
+      margin: 1em
+      border-radius: 15px
+      border: none
+      &:focus
+        color: $button-color-primary
